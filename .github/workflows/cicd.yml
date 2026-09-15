@@ -24,7 +24,6 @@ jobs:
      - name: Push Docker image
        run: |
          docker push ${{ secrets.DOCKER_USERNAME }}/devops-cicd-app:latest
-
  deploy:
   needs: build-and-push
   runs-on: ubuntu-latest
